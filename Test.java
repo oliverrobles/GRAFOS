@@ -67,6 +67,19 @@ public class Test {
  
         grafo3.BFS(0);
 	    
+	Dijkstra.Arista[] GrafoD = {
+            new Dijkstra.Arista("a", "b", 7),
+            new Dijkstra.Arista("a", "c", 9),
+            new Dijkstra.Arista("a", "f", 14),
+            new Dijkstra.Arista("b", "c", 10),
+            new Dijkstra.Arista("b", "d", 15),
+            new Dijkstra.Arista("c", "d", 11),
+            new Dijkstra.Arista("c", "f", 2),
+            new Dijkstra.Arista("d", "e", 6),
+            new Dijkstra.Arista("e", "f", 9),
+            };
+        String START = "a";
+        String END = "e";
 	    
 	Dijkstra g4 = new Dijkstra(GrafoD);
         g4.dijkstra(START);
@@ -78,19 +91,4 @@ public class Test {
         System.out.println("Todos los caminos:");
         g4.caminos();
     }
-    
-    private static final Dijkstra.Arista[] GrafoD = {
-
-        new Dijkstra.Arista("a", "b", 7),
-        new Dijkstra.Arista("a", "c", 9),
-        new Dijkstra.Arista("a", "f", 14),
-        new Dijkstra.Arista("b", "c", 10),
-        new Dijkstra.Arista("b", "d", 15),
-        new Dijkstra.Arista("c", "d", 11),
-        new Dijkstra.Arista("c", "f", 2),
-        new Dijkstra.Arista("d", "e", 6),
-        new Dijkstra.Arista("e", "f", 9),
-    };
-    private static final String START = "a";
-    private static final String END = "e";
 }
