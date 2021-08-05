@@ -83,7 +83,7 @@ public class Test {
 	    
 	Dijkstra g4 = new Dijkstra(GrafoD);
         g4.dijkstra(START);
-        System.out.println("Dijkstra\n");
+        System.out.println("\n\nDijkstra\n");
         System.out.println("Camino mas corto:");
         g4.camino(END);
         System.out.println("\n\n");
