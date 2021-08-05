@@ -24,6 +24,25 @@ public class Test {
 	      Grafo1.insertarArista(vertices[1], vertices[4], 25);
         
         Grafo1.listAdyacencia(vertices);
+	
+	
+	GrafoDFS g = new GrafoDFS(6);
+ 
+        g.addDir(0, 1);
+        g.addDir(0, 2);
+        g.addDir(1, 0);
+        g.addDir(1, 3);
+        g.addDir(2, 0);
+        g.addDir(2, 3);
+        g.addDir(3, 4);
+        g.addDir(3, 5);
+        g.addDir(4, 3);
+        g.addDir(5, 3);
+ 
+        System.out.println(
+            "A continuación se muestra el recorrido en profundidad: ");
+ 
+        g.DFS(0);
     }
     
 }
